@@ -1,0 +1,21 @@
+# Salesforce DX
+.sf/
+.sfdx/
+.localdevserver/
+deploy-options.json
+
+# Logs
+*.log
+
+# Dependencies
+node_modules/
+
+# Internal process file — never publish
+PUBLISH-MANIFEST.md
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

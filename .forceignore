@@ -1,0 +1,6 @@
+# Local-only metadata that should not be deployed/retrieved
+**/jsconfig.json
+**/.eslintrc.json
+
+# LWC Jest scaffolding
+**/__tests__/**

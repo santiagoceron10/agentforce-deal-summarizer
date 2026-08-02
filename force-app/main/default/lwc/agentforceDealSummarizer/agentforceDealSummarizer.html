@@ -1,0 +1,43 @@
+<template>
+    <lightning-card title="Deal Summary" icon-name="utility:einstein">
+        <div slot="actions">
+            <lightning-button
+                label="Summarize Deal"
+                variant="brand"
+                onclick={handleSummarize}
+                disabled={isLoading}>
+            </lightning-button>
+        </div>
+
+        <div class="slds-var-p-horizontal_medium slds-var-p-bottom_medium">
+            <template lwc:if={isLoading}>
+                <div class="slds-align_absolute-center slds-var-p-vertical_large">
+                    <lightning-spinner
+                        alternative-text="Summarizing deal..."
+                        size="small">
+                    </lightning-spinner>
+                </div>
+            </template>
+
+            <template lwc:if={hasError}>
+                <div class="slds-text-color_error slds-var-p-vertical_small" role="alert">
+                    {errorMessage}
+                </div>
+            </template>
+
+            <template lwc:if={hasSummary}>
+                <div class="summary-text slds-text-longform">
+                    <lightning-formatted-text value={summary}></lightning-formatted-text>
+                </div>
+                <div class="slds-var-m-top_small">
+                    <lightning-button
+                        label="Copy"
+                        icon-name="utility:copy_to_clipboard"
+                        variant="neutral"
+                        onclick={handleCopy}>
+                    </lightning-button>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
