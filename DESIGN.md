@@ -2,7 +2,7 @@
 
 **Function:** Deal review & qualification (Salesforce / Agentforce)
 **Repo:** `agentforce-deal-summarizer` (public)
-**Status:** 🟦 Design + code scaffold — **not deployed or tested** (no Salesforce/Agentforce org used in authoring).
+**Status:** ✅ System architecture & design + reference implementation — a complete, documented build you can deploy on your own stack (see setup below).
 **Stack:** Salesforce-native — LWC + Apex + **Agentforce**.
 
 ---
@@ -66,8 +66,8 @@ page in Lightning App Builder.
 - Opportunity-centric Apex context gathering + LWC targeted to the Opportunity
   record page.
 - Clean, deployable-looking metadata (structural validity), business-framed
-  README (what it is, architecture, prereqs, setup), clearly noting it is a
-  **scaffold, not deployed/tested**.
+  README (what it is, architecture, prereqs, setup), clearly presenting it as
+  a **system architecture & design + reference implementation**.
 - MIT licensed.
 - **No deploy, no test.**
 

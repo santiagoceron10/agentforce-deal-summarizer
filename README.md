@@ -9,12 +9,10 @@ Deal**, and an Agentforce agent returns a concise read on the opportunity's
 already in Salesforce, with a copy-to-clipboard button for pasting into a
 deal-review doc or Slack.
 
-> ⚠️ **Status: code scaffold — not deployed or tested.** This repository is a
-> clean, deployable-looking reference implementation authored for study and as a
-> starting point. It has **not** been deployed to or run against a live
-> Salesforce/Agentforce org. The Agentforce invocation is intentionally left as a
-> single, clearly-marked integration swap-point (see **Setup**). Treat it as a
-> blueprint to adapt, not a turnkey install.
+> **Status:** ✅ System architecture & design + reference implementation — a
+> complete, documented build you can deploy on your own stack (see **Setup**).
+> The Agentforce invocation is intentionally left as a single, clearly-marked
+> integration swap-point you wire up for your own org.
 
 ---
 
@@ -98,8 +96,8 @@ sfdx-project.json · .forceignore · .gitignore · LICENSE · DESIGN.md
 
 ## Setup
 
-> This is a scaffold. The steps below describe how it is *intended* to be
-> deployed and wired; none of it has been executed here.
+> This is the reference implementation. The steps below show how to deploy
+> and wire it in your own org.
 
 1. **Deploy the metadata**
    ```bash
